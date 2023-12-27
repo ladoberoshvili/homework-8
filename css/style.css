@@ -1,0 +1,157 @@
+/* 1 */
+body {
+    width: 100%;
+    background-color: rgba(221, 127, 209, 0.61);
+    margin-top: 50px;
+}
+
+button {
+    width: 190px;
+    height: 60px;
+    border-radius: 12px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    background-color: rgba(238, 172, 229, 0.61);
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    box-shadow: 2px 2px 2px black, inset 2px 2px 2px white;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+button:hover:active {
+    box-shadow: 2px 2px 2px white, inset 2px 2px 2px black;
+    text-shadow: 1px 1px 1px black
+}
+
+button:active {
+    transform: translateY(4px)
+}
+
+
+/* 2 */
+
+.card {
+    width: 250px;
+    height: 280px;
+    margin: 0 130px;
+    margin-top: 20px;
+}
+
+.card img {
+    width: 200px;
+    height: 150px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+h2 {
+    width: 200px;
+    height: 200px;
+    margin-left: 25px;
+    margin-top: 12px;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 3px 0 green, inset 3px 3px 3px 0 green;
+    border-radius: 7%;
+}
+
+.card img:hover {
+    border-top-right-radius: 7%;
+    border-top-left-radius: 7%;
+}
+
+/* 3 */
+.TEXT
+{
+    display: flex;
+    justify-content: center;
+}
+.text3{
+    color: red;
+  font-size: 140px;
+  letter-spacing: 20px;
+  animation: flashing 0.5s infinite;
+}
+
+@keyframes flashing {
+    0% {
+      text-shadow: 0 0 0 red;
+    }
+    25% {
+      text-shadow: 0 0 20px red;
+    }
+    75% {
+      text-shadow: 0 0 40px red;
+    }
+    100% {
+      text-shadow: 0 0 60px red;
+    }
+  }
+
+
+  /* 4 */
+
+  .spiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .spiner div{
+    height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border-width: 40px;
+  border-style: solid;
+  border-color: green green yellow red;
+  animation: spin 1s linear infinite;
+  }
+
+  .spiner p{
+    position: absolute;
+  font-size: 50px;
+  font-weight: bold;
+  color: green;
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(-360deg);
+    }
+  }
+  
+
+  /* 5 */
+
+  header {
+    display: flex;
+    background-color: rgb(6, 80, 90);
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  header nav {
+    width: 100%;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header ul li a {
+    font-size: 70px;
+    color: rgb(254, 254, 254);
+    text-shadow: 3px 3px 2px black;
+    transition-duration: 1s;
+  }
+
+  header ul li a:hover {
+    text-shadow: 0 0 10px rgb(211, 78, 182), 0 0 30px rgb(211, 78, 182),
+      0 0 50px rgb(211, 78, 182);
+  }
